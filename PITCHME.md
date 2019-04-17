@@ -58,6 +58,9 @@ If you cannot answer this questions shows a lack of understanding on how the cod
 
 It is important to take time to understand the code and help yourself by improving the code's reasonability*
 
+Note:
+    - Put a pin in the reasonability thing, I'll come back later to that.
+
 ---
 
 @title[why-is-this-important]
@@ -68,6 +71,7 @@ It is important to take time to understand the code and help yourself by improvi
 
 Note:
     - It is just going to be harder and harder to understand when things can be really null and when we are just adding things "just in case"
+    - This thing snowballs
 
 ---
 
@@ -82,12 +86,43 @@ Note:
     - When we provide fallback values we might be injecting data in the system that does not make sense and will break in a different point.
     - If the thing had blown up we would have catch the bug much easily, with a decent stack trace, for example.
 
+---
+
+@title[do-not-check-just-in-case]
+
+* Don't check just in case.
+
+Note:
+    - Make sure you understand what you're doing, if you have a null check, I wanna be able to assume that it is there because the data is optional
 
 ---
 
-@title[advice]
 
-* Don't check for impossible conditions.
+@title[reasonability]
+
+It is really important to be able to reason about your code. Understand what's doing, why is it doing it in a context.
+
+
+---
+
+@title[types]
+
+# Types help to reason about your code.
 
 Note:
-    - If something that is not supposed to happen, happens, we wanna know ASAP and we wanna have details. We wanna see the errors not the synthoms
+    When you add types you're helping the compiler to catch errors, but you are also helping yourself to understand what to expected and what you can do safely.
+
+---
+
+@title[recap]
+
+# By not being overly defensive we gain in:
+
+* Knowledge about our system and the systems that we interact with.
+* More reasonable code.
+* Cleaner and faster code.
+* Better error reports/less bugs in production*
+
+Note:
+    - When you add types you're helping the compiler to catch errors, but you are also helping yourself to understand what to expected and what you can do safely.
+    - I added that asterisk over there because I wanted to go deeper in the topic and maybe find some statistics but I could not do it, maybe another talk.
