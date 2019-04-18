@@ -32,9 +32,13 @@ It depends
 
 ### Can we trust on the data?
 
-Where's the data coming from? Is it from outside? Is it coming from your code?
+@ul
 
-Do you need to program in a defensive way?
+- Where's the data coming from? Is it from outside? Is it coming from your code?
+
+- Do you need to program in a defensive way?
+
+@ulend
 
 ---
 
@@ -42,27 +46,46 @@ Do you need to program in a defensive way?
 
 ### Are there null/optional values?
 
-Can person be null? Is fullName optional?
+@ul
+
+- Can person be null?
+
+- Is fullName optional?
+
+@ulend
+
 
 ---
 
 @title[is-it-safer]
 
-Do you have an answer to this questions?
-Is it safer just to be defensive because you don't know the answer?
-Is it easier?
+### Do you have an answer to this questions?
+
+@ul
+
+- Is it safer just to be defensive because you don't know the answer?
+
+- Is it easier?
+
+@ulend
+
 
 ---
 
 @title[is-it-safer]
 
-If you cannot answer this questions shows a lack of understanding on how the code works, and that's okay.
+When this questions cannot be answered there's a lack of understanding on how the code works.
+
+Note:
+    It is fine if you don't know how it works, it is impossible to understand/remember everything in a system
 
 ---
 
 @title[take-time]
 
-It is important to take time to understand the code and help yourself by improving the code's reasonability*
+### Address the main issue
+
+It is important to take time to understand the code and help yourself by improving the code's reasonability
 
 Note:
     - Put a pin in the reasonability thing, I'll come back later to that.
@@ -88,22 +111,11 @@ Note:
 Sure, the thing might not blow up but it can end up in unexpected behaviour.
 
 Note:
-    - When we try to ignore this conditions we might swallow an error.
-    - When we provide fallback values we might be injecting data in the system that does not make sense and will break in a different point.
+    - When we try to ignore this conditions we might be in fact swallowing an error.
+    - When we provide fallback values we might be injecting data in the system that dmight break in a different point.
     - If the thing had blown up we would have catch the bug much easily, with a decent stack trace, for example.
 
 ---
-
-@title[do-not-check-just-in-case]
-
-* Don't check just in case.
-
-Note:
-    - Make sure you understand what you're doing, if you have a null check, I wanna be able to assume that it is there because the data is optional
-
----
-
-
 @title[reasonability]
 
 It is really important to be able to reason about your code. Understand what's doing, why is it doing it in a context.
@@ -120,15 +132,32 @@ Note:
 
 ---
 
+
+@title[takes-away]
+
+### Takes away
+
+@ul
+
+- Don't check just in case.
+- Understand what's happening.
+- Help others by improving the reasonability
+
+@ulend
+
+Note:
+    - Make sure you understand what you're doing, if you have a null check, I wanna be able to assume that it is there because the data is optional
+
+---
+
 @title[recap]
 
 # By not being overly defensive we gain in:
 
 * Knowledge about our system and the systems that we interact with.
-* More reasonable code.
+* More expressive and self self-explanatory code that is easy to reason about.
 * Cleaner and faster code.
 * Better error reports/less bugs in production*
 
 Note:
-    - When you add types you're helping the compiler to catch errors, but you are also helping yourself to understand what to expected and what you can do safely.
     - I added that asterisk over there because I wanted to go deeper in the topic and maybe find some statistics but I could not do it, maybe another talk.
