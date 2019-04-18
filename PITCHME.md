@@ -1,6 +1,6 @@
 @title[what-do-you-see]
 
-### What's the difference between this functions?
+### What's the difference between these functions?
 
 ```
 function getFirstName(fullName) {
@@ -22,7 +22,10 @@ Is the first function wrong and second one correct?
 
 @ul
 
-It depends
+Well, it depends.
+
+Note:
+    There are a few question that need to be answer before we can get to a conclusion
 
 @ulend
 
