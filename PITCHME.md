@@ -20,6 +20,12 @@ function getFirstName(person) {
 
 Is the first function wrong and second one correct?
 
+@ul
+
+It depends
+
+@ulend
+
 ---
 
 @title[let-us-think-about-it]
