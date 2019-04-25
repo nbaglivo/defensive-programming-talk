@@ -153,7 +153,7 @@ Note:
 
 @title[recap]
 
-# By not being overly defensive we gain in:
+### By not being overly defensive we gain in:
 
 * Knowledge about our system and the systems that we interact with.
 * More expressive and self self-explanatory code that is easier to reason about.
