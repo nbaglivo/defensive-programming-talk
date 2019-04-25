@@ -22,7 +22,7 @@ Is the first function wrong and second one correct?
 
 @ul
 
-Well, it depends.
+It depends.
 
 Note:
     There are a few question that need to be answer before we can get to a conclusion
@@ -37,9 +37,8 @@ Note:
 
 @ul
 
-- Where's the data coming from? Is it from outside? Is it coming from your code?
+- Where's the data coming from? Is it coming from outside? Is it coming from your code?
 
-- Do you need to program in a defensive way?
 
 @ulend
 
@@ -72,12 +71,11 @@ Note:
 
 @ulend
 
-
 ---
 
 @title[is-it-safer]
 
-When this questions cannot be answered there's a lack of understanding on how the code works.
+When this questions cannot be answered there's a lack of understanding on how this code that you're looking at works.
 
 Note:
     It is fine if you don't know how it works, it is impossible to understand/remember everything in a system
@@ -115,13 +113,13 @@ Sure, the thing might not blow up but it can end up in unexpected behaviour.
 
 Note:
     - When we try to ignore this conditions we might be in fact swallowing an error.
-    - When we provide fallback values we might be injecting data in the system that dmight break in a different point.
-    - If the thing had blown up we would have catch the bug much easily, with a decent stack trace, for example.
+    - When we provide fallback values we might be injecting data in the system that might break in a different point, good luck finding debugging.
+    - If the thing had blown up we would have caught the bug much easily, with a decent stack trace, for example.
 
 ---
 @title[reasonability]
 
-It is really important to be able to reason about your code. Understand what's doing, why is it doing it in a context.
+It is really important to be able to reason about your code. Understand what's doing and why is doing it like that.
 
 
 ---
@@ -131,7 +129,7 @@ It is really important to be able to reason about your code. Understand what's d
 # Types help to reason about your code.
 
 Note:
-    When you add types you're helping the compiler to catch errors, but you are also helping yourself to understand what to expected and what you can do safely.
+    When you add types you're helping the compiler to catch errors, but you are also helping yourself to understand what are the expected inputs and what are the things that you can do safely and what are the things that you have to be careful about.
 
 ---
 
@@ -158,7 +156,7 @@ Note:
 # By not being overly defensive we gain in:
 
 * Knowledge about our system and the systems that we interact with.
-* More expressive and self self-explanatory code that is easy to reason about.
+* More expressive and self self-explanatory code that is easier to reason about.
 * Cleaner and faster code.
 * Better error reports/less bugs in production*
 
