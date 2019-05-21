@@ -3,7 +3,7 @@
 ### What's the difference between these functions?
 
 ```
-function getFirstName(fullName) {
+function getFirstName(person) {
     return person.fullName.firtName;
 }
 ```
