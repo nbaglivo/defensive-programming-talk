@@ -50,9 +50,9 @@ Note:
 
 @ul
 
-- Can person be null?
+- Can person be `null`?
 
-- Is fullName optional?
+- Is `fullName` optional?
 
 @ulend
 
@@ -79,6 +79,15 @@ When this questions cannot be answered there's a lack of understanding on how th
 
 Note:
     It is fine if you don't know how it works, it is impossible to understand/remember everything in a system
+
+---
+
+@title[feel-comfortable]
+
+### Feeling comfortable with your code is important
+
+The way of feeling comfortable **is not** adding guards to avoid possible ugly situations.
+The way of feeling comfortable **is** to understand how things work,
 
 ---
 
